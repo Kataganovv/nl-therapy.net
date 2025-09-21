@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLT - Нейро-лимфатическая модуляция</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>NLT</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-ru="Главная" data-en="Home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-ru="О методе" data-en="About Method">О методе</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link" data-ru="Исследования" data-en="Research">Исследования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cases" class="nav-link" data-ru="Кейсы" data-en="Cases">Кейсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-ru="Контакты" data-en="Contact">Контакты</a>
+                    </li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="donate-btn" data-ru="Поддержать" data-en="Donate">Поддержать</button>
+                    <div class="language-switcher">
+                        <button id="lang-btn" onclick="toggleLanguage()">EN</button>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" 
+                        data-ru="Нейро-лимфатическая модуляция для восстановления баланса организма"
+                        data-en="Neuro-lymphatic modulation to restore systemic balance">
+                        Нейро-лимфатическая модуляция для восстановления баланса организма
+                    </h1>
+                    <p class="hero-subtitle" 
+                       data-ru="Комплексный протокол: лимфатический дренаж, вагальный тонус, кишечник и сон. Научный подход без обещаний «чудо-лечения»."
+                       data-en="A comprehensive protocol: lymphatic drainage, vagal tone, gut axis, and sleep. A research-first approach without miracle claims.">
+                        Комплексный протокол: лимфатический дренаж, вагальный тонус, кишечник и сон. Научный подход без обещаний «чудо-лечения».
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')" 
+                                data-ru="Связаться" data-en="Contact">
+                            Связаться
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('about')" 
+                                data-ru="Подробнее о методе" data-en="Learn more">
+                            Подробнее о методе
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-ru="Что такое NLT" data-en="What is NLT">Что такое NLT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="method-description" 
+                           data-ru="NLT (Neuro-Lymphatic Therapy) — это исследовательский протокол нейро-лимфатической терапии, основанный на модифицированной технике хиджамы. Он сочетает работу с ключевыми зонами тела, активацию вагального тонуса, поддержку кишечника и нормализацию сна."
+                           data-en="NLT (Neuro-Lymphatic Therapy) is a research protocol aimed at modulating neuro-immune and lymphatic pathways, based on modified hijama technique. It combines targeted work on key body zones, vagal tone activation, gut support, and sleep normalization.">
+                            NLT (Neuro-Lymphatic Therapy) — это исследовательский протокол нейро-лимфатической терапии, основанный на модифицированной технике хиджамы. Он сочетает работу с ключевыми зонами тела, активацию вагального тонуса, поддержку кишечника и нормализацию сна.
+                        </p>
+                        
+                        <div class="hijama-info">
+                            <h3 data-ru="Основа метода:" data-en="Method foundation:">Основа метода:</h3>
+                            <p data-ru="Метод базируется на древней практике хиджамы (сухие банки), адаптированной с учетом современных знаний о нейро-лимфатических связях. Модификация включает специфические точки воздействия для активации лимфатического дренажа и стимуляции блуждающего нерва."
+                               data-en="The method is based on the ancient practice of hijama (dry cupping), adapted with modern knowledge of neuro-lymphatic connections. The modification includes specific intervention points for lymphatic drainage activation and vagus nerve stimulation.">
+                                Метод базируется на древней практике хиджамы (сухие банки), адаптированной с учетом современных знаний о нейро-лимфатических связях. Модификация включает специфические точки воздействия для активации лимфатического дренажа и стимуляции блуждающего нерва.
+                            </p>
+                        </div>
+                        
+                        <h3 data-ru="Гипотеза:" data-en="Hypothesis:">Гипотеза:</h3>
+                        <p data-ru="Улучшение лимфодренажа и восстановление работы блуждающего нерва способны снижать воспаление и помогать организму возвращаться к балансу."
+                           data-en="Improving lymphatic drainage and restoring vagal activity may reduce inflammation and help the body return to balance.">
+                            Улучшение лимфодренажа и восстановление работы блуждающего нерва способны снижать воспаление и помогать организму возвращаться к балансу.
+                        </p>
+
+                        <h3 data-ru="Особенности метода:" data-en="Key features:">Особенности метода:</h3>
+                        <ul class="features-list">
+                            <li data-ru="Естественный и комплексный подход" data-en="Natural and comprehensive approach">Естественный и комплексный подход</li>
+                            <li data-ru="Фокус на ось «кишечник–мозг» и глимфатическую систему" data-en="Focus on the gut–brain axis and glymphatic system">Фокус на ось «кишечник–мозг» и глимфатическую систему</li>
+                            <li data-ru="Минимальная инвазивность и высокая безопасность" data-en="Low-invasive and safety-oriented">Минимальная инвазивность и высокая безопасность</li>
+                            <li data-ru="Эффективность проверяется через независимые исследования" data-en="Effectiveness verified through independent studies">Эффективность проверяется через независимые исследования</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="protocol-stages">
+                    <h3 class="stages-title" data-ru="Этапы протокола:" data-en="Protocol stages:">Этапы протокола:</h3>
+                    <div class="stages-grid">
+                        <div class="stage-card">
+                            <div class="stage-number">1</div>
+                            <h4 data-ru="Оценка состояния" data-en="Assessment">Оценка состояния</h4>
+                            <p data-ru="анамнез, триггеры, сон, питание" data-en="history, triggers, sleep, diet">анамнез, триггеры, сон, питание</p>
+                        </div>
+                        <div class="stage-card">
+                            <div class="stage-number">2</div>
+                            <h4 data-ru="Лимфатический дренаж" data-en="Lymphatic drainage">Лимфатический дренаж</h4>
+                            <p data-ru="работа по зонам с учётом реакции пациента" data-en="zone-specific work paced to response">работа по зонам с учётом реакции пациента</p>
+                        </div>
+                        <div class="stage-card">
+                            <div class="stage-number">3</div>
+                            <h4 data-ru="Вагальная модуляция" data-en="Vagal modulation">Вагальная модуляция</h4>
+                            <p data-ru="шея, диафрагма, дыхательные практики" data-en="neck, diaphragm, breathing practices">шея, диафрагма, дыхательные практики</p>
+                        </div>
+                        <div class="stage-card">
+                            <div class="stage-number">4</div>
+                            <h4 data-ru="Кишечник" data-en="Gut axis">Кишечник</h4>
+                            <p data-ru="питание, микробиота, проницаемость" data-en="diet, microbiota, permeability">питание, микробиота, проницаемость</p>
+                        </div>
+                        <div class="stage-card">
+                            <div class="stage-number">5</div>
+                            <h4 data-ru="Сон" data-en="Sleep">Сон</h4>
+                            <p data-ru="циркадные ритмы и активация глимфатической системы" data-en="circadian hygiene and glymphatic support">циркадные ритмы и активация глимфатической системы</p>
+                        </div>
+                        <div class="stage-card">
+                            <div class="stage-number">6</div>
+                            <h4 data-ru="Цикличность" data-en="Cycles">Цикличность</h4>
+                            <p data-ru="серии из 4–6 процедур, затем пауза и переоценка" data-en="4–6 sessions, then pause and reassessment">серии из 4–6 процедур, затем пауза и переоценка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-ru="Исследования" data-en="Research">Исследования</h2>
+                
+                <div class="research-content">
+                    <div class="hypothesis-section">
+                        <h3 data-ru="Наша гипотеза:" data-en="Our Hypothesis">Наша гипотеза:</h3>
+                        <p data-ru="NLT активирует естественные механизмы самовосстановления организма через лимфатическую систему, блуждающий нерв и нормализацию сна."
+                           data-en="Neuro-Lymphatic Therapy (NLT) is based on the assumption that targeted stimulation of the lymphatic system and the vagus nerve can restore the body's natural self-regulation. By enhancing lymphatic drainage, modulating vagal tone, and supporting restorative sleep, NLT may reduce chronic inflammation, improve immune balance, and promote cellular recovery.">
+                            NLT активирует естественные механизмы самовосстановления организма через лимфатическую систему, блуждающий нерв и нормализацию сна.
+                        </p>
+                    </div>
+
+                    <div class="research-directions">
+                        <h3 data-ru="Что мы исследуем:" data-en="Research Directions">Что мы исследуем:</h3>
+                        <div class="research-grid">
+                            <div class="research-card">
+                                <h4 data-ru="Связь кишечника и мозга" data-en="Gut–Brain Axis">Связь кишечника и мозга</h4>
+                                <p data-ru="(ось «кишечник–мозг»)" data-en="Exploring how improved gut microbiome and intestinal barrier function can positively influence neurological and mental health.">(ось «кишечник–мозг»)</p>
+                            </div>
+                            <div class="research-card">
+                                <h4 data-ru="Роль блуждающего нерва" data-en="Vagus Nerve and Autonomic Regulation">Роль блуждающего нерва</h4>
+                                <p data-ru="в снижении воспаления" data-en="Studying the role of vagal stimulation in reducing systemic inflammation and restoring the stress–relaxation balance.">в снижении воспаления</p>
+                            </div>
+                            <div class="research-card">
+                                <h4 data-ru="Лимфатический и глимфатический дренаж" data-en="Lymphatic and Glymphatic Systems">Лимфатический и глимфатический дренаж</h4>
+                                <p data-ru="" data-en="Investigating how enhanced lymphatic drainage and glymphatic clearance support toxin removal and may slow neurodegenerative processes."></p>
+                            </div>
+                            <div class="research-card">
+                                <h4 data-ru="Влияние сна и циркадных ритмов" data-en="Circadian Rhythms and Sleep">Влияние сна и циркадных ритмов</h4>
+                                <p data-ru="на здоровье" data-en="Understanding how restoring deep sleep and natural circadian cycles promotes brain detoxification and overall health.">на здоровье</p>
+                            </div>
+                            <div class="research-card">
+                                <h4 data-ru="Иммунный баланс" data-en="Immune Modulation">Иммунный баланс</h4>
+                                <p data-ru="при хронических и аутоиммунных заболеваниях" data-en="Evaluating potential effects on Treg/Th17 balance and autoantibody regulation in chronic and autoimmune diseases.">при хронических и аутоиммунных заболеваниях</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-research">
+                        <h3 data-ru="Будущие исследования" data-en="Future Research">Будущие исследования</h3>
+                        <p data-ru="Мы понимаем, что для признания метода необходима независимая научная оценка. Поэтому наша цель — совместные исследования с международными клиниками и университетами."
+                           data-en="We recognize that independent scientific validation is essential for the acceptance of NLT. Our vision is to collaborate with international clinics and research institutions to conduct high-quality studies.">
+                            Мы понимаем, что для признания метода необходима независимая научная оценка. Поэтому наша цель — совместные исследования с международными клиниками и университетами.
+                        </p>
+                        
+                        <h4 data-ru="В планах:" data-en="Planned directions include:">В планах:</h4>
+                        <ul>
+                            <li data-ru="Проведение клинических испытаний по ревматоидному артриту, сахарному диабету 2 типа и нейродегенеративным заболеваниям (Паркинсон, Альцгеймер)."
+                                data-en="Clinical trials in rheumatoid arthritis, type 2 diabetes, and neurodegenerative diseases (Parkinson's, Alzheimer's).">
+                                Проведение клинических испытаний по ревматоидному артриту, сахарному диабету 2 типа и нейродегенеративным заболеваниям (Паркинсон, Альцгеймер).
+                            </li>
+                            <li data-ru="Изучение влияния NLT на иммунный баланс (Treg/Th17, аутоантитела)."
+                                data-en="Exploring NLT's impact on immune regulation, including Treg/Th17 balance and autoantibody modulation.">
+                                Изучение влияния NLT на иммунный баланс (Treg/Th17, аутоантитела).
+                            </li>
+                            <li data-ru="Исследования роли NLT в нормализации сна, активации глимфатической системы и восстановлении циркадных ритмов."
+                                data-en="Investigating the role of NLT in restoring sleep quality, enhancing glymphatic clearance, and normalizing circadian rhythms.">
+                                Исследования роли NLT в нормализации сна, активации глимфатической системы и восстановлении циркадных ритмов.
+                            </li>
+                            <li data-ru="Сотрудничество с исследовательскими центрами Саудовской Аравии, ОАЭ, Катара и других стран для проведения независимых мультицентровых проектов."
+                                data-en="Building partnerships with research centers in Saudi Arabia, UAE, Qatar, and beyond for independent, multi-center studies.">
+                                Сотрудничество с исследовательскими центрами Саудовской Аравии, ОАЭ, Катара и других стран для проведения независимых мультицентровых проектов.
+                            </li>
+                        </ul>
+
+                        <p class="mission-statement" 
+                           data-ru="Наша миссия — объединить практический опыт и современные научные стандарты, чтобы подтвердить эффективность NLT и сделать его доступным для пациентов во всем мире."
+                           data-en="Our mission is to bridge practical experience with modern scientific standards, validating NLT as a new therapeutic pathway for patients worldwide.">
+                            Наша миссия — объединить практический опыт и современные научные стандарты, чтобы подтвердить эффективность NLT и сделать его доступным для пациентов во всем мире.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Section -->
+        <section id="cases" class="section">
+            <div class="container">
+                <h2 class="section-title" data-ru="Клинические кейсы" data-en="Clinical Cases">Клинические кейсы</h2>
+                <div class="cases-placeholder">
+                    <p data-ru="Раздел находится в разработке. Здесь будут представлены клинические случаи применения NLT метода."
+                       data-en="This section is under development. Clinical cases of NLT application will be presented here.">
+                        Раздел находится в разработке. Здесь будут представлены клинические случаи применения NLT метода.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-ru="Контакты" data-en="Contact">Контакты</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 data-ru="Свяжитесь с нами" data-en="Get in Touch">Свяжитесь с нами</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h4 data-ru="Email" data-en="Email">Email</h4>
+                                <p><a href="mailto:nltherapy312@gmail.com">nltherapy312@gmail.com</a></p>
+                            </div>
+
+                            <div class="contact-item">
+                                <h4 data-ru="Для исследователей" data-en="For Researchers">Для исследователей</h4>
+                                <p data-ru="Если вы заинтересованы в сотрудничестве или проведении исследований NLT метода, напишите нам на указанный выше email."
+                                   data-en="If you are interested in collaboration or conducting NLT research, please contact us at the email above.">
+                                   Если вы заинтересованы в сотрудничестве или проведении исследований NLT метода, напишите нам на указанный выше email.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3 data-ru="Форма обратной связи" data-en="Contact Form">Форма обратной связи</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-ru="Имя" data-en="Name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-ru="Email" data-en="Email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-ru="Номер телефона" data-en="Phone Number">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+996 (xxx) xxx-xxx">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-ru="Тема" data-en="Subject">Тема</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-ru="Сообщение" data-en="Message">Сообщение</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" 
+                                    data-ru="Отправить" data-en="Send">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLT</h3>
+                    <p data-ru="Нейро-лимфатическая терапия для восстановления баланса организма"
+                       data-en="Neuro-lymphatic therapy to restore systemic balance">
+                        Нейро-лимфатическая терапия для восстановления баланса организма
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ru="Разделы" data-en="Sections">Разделы</h4>
+                    <ul>
+                        <li><a href="#home" data-ru="Главная" data-en="Home">Главная</a></li>
+                        <li><a href="#about" data-ru="О методе" data-en="About Method">О методе</a></li>
+                        <li><a href="#research" data-ru="Исследования" data-en="Research">Исследования</a></li>
+                        <li><a href="#cases" data-ru="Кейсы" data-en="Cases">Кейсы</a></li>
+                        <li><a href="#contact" data-ru="Контакты" data-en="Contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ru="Связь" data-en="Contact">Связь</h4>
+                    <p data-ru="Используйте форму обратной связи для связи с нами"
+                       data-en="Use the contact form to get in touch with us">
+                        Используйте форму обратной связи для связи с нами
+                    </p>
+                    <p class="footer-domain">
+                        <a href="https://nl-therapy.net" target="_blank">nl-therapy.net</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NLT. <span data-ru="Все права защищены." data-en="All rights reserved.">Все права защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
